@@ -10,7 +10,8 @@
         android:id="@+id/lv_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#64B5F6"
+        android:background="@color/toolbar"
+        app:titleTextColor="#fff"
         app:menu="@menu/menu_item" />
 
     <androidx.recyclerview.widget.RecyclerView

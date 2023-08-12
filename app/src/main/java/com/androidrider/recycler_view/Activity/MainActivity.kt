@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.androidrider.recycler_view.Adapters.MyAdapter
@@ -33,22 +34,43 @@ class MainActivity : AppCompatActivity() {
         toolbar.setTitle("Recycler View")
         setSupportActionBar(toolbar)
 
-        // below line is to add data to our array list.
-        data.add(DataModel("DSA", "DSA Self Paced Course", R.drawable.ruby_logo))
-        data.add(DataModel("JAVA", "JAVA Self Paced Course", R.drawable.rails_logo))
-        data.add(DataModel("C++", "C++ Self Paced Course", R.drawable.cplus_logo))
-        data.add(DataModel("Python", "Python Self Paced Course", R.drawable.cplus_logo))
-        data.add(DataModel("Rails","Rails Self Paced Course",R.drawable.rails_logo))
-        data.add(DataModel("Fork CPP","Fork CPP Self Paced Course",R.drawable.cplus_logo))
-        data.add(DataModel("Kotlin","Kotlin Self Paced Course",R.drawable.kotlin_logo))
-        data.add(DataModel("Ruby","Ruby Self Paced Course",R.drawable.ruby_logo))
-        data.add(DataModel("Ruby","Ruby Self Paced Course",R.drawable.ruby_logo))
-        data.add(DataModel("Ruby","Ruby Self Paced Course",R.drawable.ruby_logo))
-        data.add(DataModel("Ruby","Ruby Self Paced Course",R.drawable.ruby_logo))
-        data.add(DataModel("Ruby","Ruby Self Paced Course",R.drawable.ruby_logo))
-        data.add(DataModel("Ruby","Ruby Self Paced Course",R.drawable.ruby_logo))
-        data.add(DataModel("Ruby","Ruby Self Paced Course",R.drawable.ruby_logo))
+        // Change overflow icon color programmatically
+        val overflowIcon = toolbar.overflowIcon
+        overflowIcon?.setTint(ContextCompat.getColor(this, R.color.white))
 
+        // below line is to add data to our array list.
+        data.add(DataModel("C", "C Programming Language", R.drawable.c_logo))
+        data.add(DataModel("C++", "C++ Programming Language", R.drawable.cplus_logo))
+        data.add(DataModel("C#", "C# Programming Language", R.drawable.c_sharp_logo))
+        data.add(DataModel("Java", "Java Programming Language", R.drawable.java_logo))
+        data.add(DataModel("Kotlin", "Kotlin Programming Language", R.drawable.kotlin_logo))
+        data.add(DataModel("Python", "Python Programming Language", R.drawable.python_logo))
+        data.add(DataModel("Ruby", "Ruby Programming Language", R.drawable.ruby_logo))
+        data.add(DataModel("Hadoop", "Hadoop Programming Language", R.drawable.hadoop_logo))
+        data.add(DataModel("PHP", "PHP Programming Language", R.drawable.php_logo))
+        data.add(DataModel("Rails", "Rails Programming Language", R.drawable.rails_logo))
+        data.add(DataModel("JavaScript", "JavaScript Programming Language", R.drawable.javascript_logo))
+        data.add(DataModel("Perl", "Perl Programming Language", R.drawable.perl_logo))
+        data.add(DataModel(".NET", ".NET Programming Language", R.drawable.dot_net_logo))
+        data.add(DataModel("Ajax", "Ajax Programming Language", R.drawable.ajax_logo))
+        data.add(DataModel("Scala", "Scala Programming Language", R.drawable.scala_logo))
+        data.add(DataModel("Objective-C", "Objective-C Programming Language", R.drawable.objective_c_logo))
+        data.add(DataModel("Haskell", "Haskell Programming Language", R.drawable.haskell_logo))
+        data.add(DataModel("SQL", "SQL Programming Language", R.drawable.sql_logo))
+        data.add(DataModel("Rust", "Rust Programming Language", R.drawable.rust_logo))
+        data.add(DataModel("HTML", "HTML Programming Language", R.drawable.html_logo))
+        data.add(DataModel("Ada", "Ada Programming Language", R.drawable.ada_logo))
+        data.add(DataModel("Lisp", "Lisp Programming Language", R.drawable.lisp_logo))
+        data.add(DataModel("Fortran", "Fortran Programming Language", R.drawable.fortran_logo))
+        data.add(DataModel("Swift", "Swift Programming Language", R.drawable.swift_logo))
+        data.add(DataModel("TypeScript", "TypeScript Programming Language", R.drawable.typescript_logo))
+        data.add(DataModel("COBOL", "COBOL Programming Language", R.drawable.cobol_logo))
+        data.add(DataModel("Assembly Language", "Assembly Programming Language", R.drawable.assembly_language_logo))
+        data.add(DataModel("Dart", "Dart Programming Language", R.drawable.dart_logo))
+        data.add(DataModel("Go", "Go Programming Language", R.drawable.go_logo))
+        data.add(DataModel("R", "R Programming Language", R.drawable.r_logo))
+        data.add(DataModel("MatLab", "MatLab Programming Language", R.drawable.matlab_logo))
+        data.add(DataModel("NoSQL", "NoSQL Programming Language", R.drawable.nosql_logo))
 
         recyclerView = binding.recyclerView
 

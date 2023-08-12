@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="statusBar">#00796B</color>
+    <color name="toolbar">#D900796B</color>
+
+
+    <!--    <color name="colorPrimary">#0F9D58</color>-->
+
+    <color name="colorPrimary">#075e54</color>
+    <color name="colorPrimaryDark">#056008</color>
+    <color name="colorAccent">#E39D36</color>
 </resources>
