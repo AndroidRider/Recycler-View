@@ -4,20 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.MainActivity">
-
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/lv_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#64B5F6"
-        app:menu="@menu/menu_item" />
+    tools:context=".Activity.MainActivity2">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/lv_toolbar"/>
+        android:layout_height="match_parent"/>
 
     <TextView
         android:id="@+id/lv_emptyView"
